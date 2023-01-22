@@ -1,6 +1,7 @@
 package org.cqfn.diktat.util
 
 import org.cqfn.diktat.common.config.rules.RulesConfig
+import org.cqfn.diktat.test.framework.util.DiktatRuleSetProvider4Test
 import com.pinterest.ktlint.core.KtLint
 import com.pinterest.ktlint.core.LintError
 import com.pinterest.ktlint.core.Rule

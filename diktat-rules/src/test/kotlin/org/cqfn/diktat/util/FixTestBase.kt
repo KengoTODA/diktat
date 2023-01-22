@@ -10,6 +10,7 @@ import org.cqfn.diktat.ruleset.utils.defaultCallback
 import org.cqfn.diktat.ruleset.utils.format
 import org.cqfn.diktat.test.framework.processing.FileComparisonResult
 import org.cqfn.diktat.test.framework.processing.TestComparatorUnit
+import org.cqfn.diktat.test.framework.util.DiktatRuleSetProvider4Test
 import com.pinterest.ktlint.core.Rule
 import org.intellij.lang.annotations.Language
 import org.junit.jupiter.api.Assertions

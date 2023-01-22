@@ -23,20 +23,6 @@ import org.junit.jupiter.api.Test
 
 import java.io.File
 
-/**
- * simple class for emulating RuleSetProvider to inject .yml rule configuration and mock this part of code
- */
-class DiktatRuleSetProvider4Test(private val ruleSupplier: (rulesConfigList: List<RulesConfig>) -> Rule,
-                                 rulesConfigList: List<RulesConfig>?) : RuleSetProvider {
-    private val rulesConfigList: List<RulesConfig>? = rulesConfigList ?: RulesConfigReader(javaClass.classLoader).readResource("diktat-analysis.yml")
-
-    @Suppress("OVERRIDE_DEPRECATION")
-    override fun get() = RuleSet(
-        DIKTAT_RULE_SET_ID,
-        ruleSupplier.invoke(rulesConfigList ?: emptyList())
-    )
-}
-
 class DiktatRuleSetProviderTest {
     @Suppress("UnsafeCallOnNullableType")
     @Test
